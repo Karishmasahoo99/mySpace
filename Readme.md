@@ -38,3 +38,10 @@ Successful responses: 200-299
 Redirection responses: 300-399
 Client error responses: 400-499
 Server error responses: 500-599
+
+The actual power of mongoose comes from npm library: mongoose-aggregrate-paginate-v2
+
+Suppose we want to encrypt password before saving it.
+userSchema.pre("save", callback function)
+
+Don't use arrow function here in callback function because arrow function does not have access to this operator.
