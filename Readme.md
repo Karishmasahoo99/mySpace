@@ -45,3 +45,10 @@ Suppose we want to encrypt password before saving it.
 userSchema.pre("save", callback function)
 
 Don't use arrow function here in callback function because arrow function does not have access to this operator.
+
+app.use("/users", userRouter) 
+if we want to have any other routes inside /users we will write it in userRouter.
+http://localhost:8000/users/register
+http://localhost:8000/users/login
+
+login and register route are written inside userRouter
