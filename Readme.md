@@ -52,3 +52,13 @@ http://localhost:8000/users/register
 http://localhost:8000/users/login
 
 login and register route are written inside userRouter
+
+If we add the below line:
+const options={
+    httpOnly:true,
+    secure:true
+}
+then
+Cookies can be modified from server, not from frontend.
+
+we can add as many cookie using .cookie() method
